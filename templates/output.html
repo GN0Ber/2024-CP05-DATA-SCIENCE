@@ -1,0 +1,569 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Relatório de Análise de Dados</title>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            h1 { text-align: center; }
+            h2 { color: #2F4F4F; }
+            table { border-collapse: collapse; width: 80%; margin: auto; }
+            th, td { text-align: left; padding: 8px; border: 1px solid #ddd; }
+            tr:nth-child(even) { background-color: #f2f2f2; }
+            img { display: block; margin-left: auto; margin-right: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>Relatório de Análise de Dados</h1>
+        
+    <h2>Visão Geral do Conjunto de Dados</h2>
+    <p>Número de observações: 213</p>
+    <p>Número de variáveis: 11</p>
+    <h3>Valores Ausentes</h3>
+    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Valores Ausentes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>S/N</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Year</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Menopause</th>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>Tumor Size (cm)</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Inv-Nodes</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Breast</th>
+      <td>6</td>
+    </tr>
+    <tr>
+      <th>Metastasis</th>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>Breast Quadrant</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>History</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>Diagnosis Result</th>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+    
+        <h2>Análise de Variáveis</h2>
+        <h3>S/N</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>S/N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>213.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>107.000000</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>61.631972</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>54.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>107.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>160.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>213.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/S_N_hist.png" alt="Gráfico de S/N" width="600">
+        
+        <h3>Year</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>212.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>2019.523585</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.500626</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2019.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2019.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>2020.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>2020.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>2020.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Year_hist.png" alt="Gráfico de Year" width="600">
+        
+        <h3>Age</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>213.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>39.784038</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>14.096712</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>13.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>30.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>40.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>49.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>77.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Age_hist.png" alt="Gráfico de Age" width="600">
+        
+        <h3>Menopause</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Menopause</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>213.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.666667</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.472515</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Menopause_hist.png" alt="Gráfico de Menopause" width="600">
+        
+        <h3>Tumor Size (cm)</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Tumor Size (cm)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>212.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>4.268868</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>2.571881</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>2.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>4.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>6.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>14.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Tumor Size (cm)_hist.png" alt="Gráfico de Tumor Size (cm)" width="600">
+        
+        <h3>Inv-Nodes</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Inv-Nodes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>212.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.353774</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.508072</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>3.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Inv-Nodes_hist.png" alt="Gráfico de Inv-Nodes" width="600">
+        
+        <h3>Metastasis</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Metastasis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>212.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.344340</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.476277</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Metastasis_hist.png" alt="Gráfico de Metastasis" width="600">
+        
+        <h3>History</h3>
+        <p>Tipo: Numérica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>History</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>211.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.412322</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.493423</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/History_hist.png" alt="Gráfico de History" width="600">
+        
+        <h3>Breast</h3>
+        <p>Tipo: Categórica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Breast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>207</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>Left</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>107</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Breast_bar.png" alt="Gráfico de Breast" width="600">
+        
+        <h3>Breast Quadrant</h3>
+        <p>Tipo: Categórica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Breast Quadrant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>211</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>Upper outer</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>67</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Breast Quadrant_bar.png" alt="Gráfico de Breast Quadrant" width="600">
+        
+        <h3>Diagnosis Result</h3>
+        <p>Tipo: Categórica</p>
+        <p>Estatísticas:</p>
+        <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Diagnosis Result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>213</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>Benign</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>120</td>
+    </tr>
+  </tbody>
+</table>
+        <p>Gráfico:</p>
+        <img src="/static/plots/Diagnosis Result_bar.png" alt="Gráfico de Diagnosis Result" width="600">
+        
+        
+    <h2>Matriz de Correlação</h2>
+    <img src="/static/plots/correlation_matrix.png" alt="Matriz de Correlação" width="800">
+    
+        
+    <h2>Mapa de Calor de Dados Ausentes</h2>
+    <img src="/static/plots/missing_data_heatmap.png" alt="Mapa de Calor de Dados Ausentes" width="800">
+    
+    </body>
+    </html>
+    
